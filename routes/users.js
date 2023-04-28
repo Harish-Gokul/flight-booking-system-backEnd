@@ -22,7 +22,7 @@ routes.get("/",authAdminMid,async(req,res)=>{
 
 routes.get("/:id",async(req,res)=>{
 try{
-    const user = await Users.find({_id:req.params.id}).populate("tickets.flightId").select("-password")
+    const user = await Users.find({_id:req.params.id}).populate("tickets.flightId" ,"-_id -seats -bookedUsers -__v").select("-password -tickets.seats._id -tickets._id -__v")
     if(user.length <1) return res.status(404).send({message:"User Not Found / invalid User id"})
    
     res.send(user)

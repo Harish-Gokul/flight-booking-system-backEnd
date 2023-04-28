@@ -27,7 +27,7 @@ routes.post("/",async(req,res)=>{
  
     const token = jwt.sign({_id:user._id},"flightBooking")
 
-    res.header("x-auth-user-token",token).send({user : _.pick(user,["name","email","phone","_id","tickets"]),token:token})
+    res.header("x-auth-user-token",token).send({user : _.pick(user,["name","email","phone","_id",]),token:token})
 })
 
 
