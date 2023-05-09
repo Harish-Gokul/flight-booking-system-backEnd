@@ -22,16 +22,16 @@ Software Required
         ```json
         // Req Body
         {
-            "name":"Vyshali S",
-            "email":"vyshali@gmail.com",
-            "password":"vyshali",
+            "name":"Harish Gokul G",
+            "email":"Harishgokul@gmail.com",
+            "password":"harishgokul",
             "phone": "9876543210"
         }
         // Res Body
         {
             "admin": {
-                "name": "Vyshali S",
-                "email": "vyshali@gmail.com",
+                "name": "Harish Gokul G",
+                "email": "Harishgokul@gmail.com",
                 "_id": "6445bc6bdde421220dd637f2",
                 "phone": 9876543210
             },
@@ -43,14 +43,14 @@ Software Required
     ```json
         // Request body
         {
-            "email":"vyshali@gmail.com",
-            "password":"vyshali"
+            "email":"harishgokul@gmail.com",
+            "password":"harishgokul"
         }
         // Response
         {
     "admin": {
-        "name": "Vyshali S",
-        "email": "vyshali@gmail.com",
+        "name": "Harish Gokul G",
+        "email": "Harishgokul@gmail.com",
         "_id": "6445bc6bdde421220dd637f2",
         "phone": 9876543210
     },
