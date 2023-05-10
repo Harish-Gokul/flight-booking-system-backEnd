@@ -22,16 +22,26 @@ Software Required
         ```json
         // Req Body
         {
+<<<<<<< HEAD
             "name":"Harish Goku G",
             "email":"harishgokul@gmail.com",
+=======
+            "name":"Harish Gokul G",
+            "email":"Harishgokul@gmail.com",
+>>>>>>> e5f35fef63a4b5d584267626ca7b3d595fa9358b
             "password":"harishgokul",
             "phone": "9876543210"
         }
         // Res Body
         {
             "admin": {
+<<<<<<< HEAD
                 "name": "Harish Goku G",
                 "email": "harishgokul@gmail.com",
+=======
+                "name": "Harish Gokul G",
+                "email": "Harishgokul@gmail.com",
+>>>>>>> e5f35fef63a4b5d584267626ca7b3d595fa9358b
                 "_id": "6445bc6bdde421220dd637f2",
                 "phone": 9876543210
             },
@@ -49,8 +59,13 @@ Software Required
         // Response
         {
     "admin": {
+<<<<<<< HEAD
         "name": "Harish Goku G",
         "email": "harishgokul@gmail.com",
+=======
+        "name": "Harish Gokul G",
+        "email": "Harishgokul@gmail.com",
+>>>>>>> e5f35fef63a4b5d584267626ca7b3d595fa9358b
         "_id": "6445bc6bdde421220dd637f2",
         "phone": 9876543210
     },
