@@ -3,10 +3,10 @@
 ### To start The server 
 ```bash
 npm i 
-npm index.js
+node index.js
 ```
 I have not included node_module folder, so `npm i` can install all the dependencies that i have used in my project 
-`npm index.js` will start the server in port 3000
+`node index.js` will start the server in port 3000
 
 Software Required
    - Node js 
@@ -19,7 +19,7 @@ Software Required
 - Create a admin 
     - `POST` [http://localhost:3000/admins](http://localhost:3000/admins)
         
-        ```json
+        ```javascript
         // Req Body
         {
             "name":"Harish Gokul G",
@@ -40,7 +40,7 @@ Software Required
         ```
 - Authentication of Admin
     - `POST` [http://localhost:3000/authAdmin](http://localhost:3000/authAdmin)
-    ```json
+    ```javascript
         // Request body
         {
             "email":"harishgokul@gmail.com",
@@ -72,7 +72,7 @@ To access specific Routes
     - `GET` [http://localhost:3000/flights/?from=Coimbatore&to=Chennai&departureDateAndTime=2023-04-21](http://localhost:3000/flights/?from=Coimbatore&to=Chennai&departureDateAndTime=2023-04-21)
 - To Create A Flight (**Admin Auth Required we have provide token in Header with `x-auth-admin-token` key**)
     - `POST` [http://localhost:3000/flights](http://localhost:3000/flights)
-        ```json
+        ```javascript
         // request Header - x-auth-admin-token : token
         // request body
         {
@@ -94,7 +94,7 @@ To access specific Routes
 ## User 
 - To Create A User
     - `POST` [http://localhost:3000/users] (**No Auth Required**)
-    ```json
+    ```javascript
     // request body
         {
             "name":"Sample Name",
@@ -116,7 +116,7 @@ To access specific Routes
     ```
 - Authentication of User
     - `POST` [http://localhost:3000/authUser](http://localhost:3000/authUser)
-    ```json
+    ```javascript
     // Request body
         { 
             "email":"sample@gmail.com",
@@ -136,7 +136,7 @@ To access specific Routes
     ```
 - To Book a Ticket
     - `PUT` [http://localhost:3000/bookTicket/:USERID](http://localhost:3000/:USERID) (**User Auth Token Requried**)
-    ```json
+    ```javascript
     //Request Header x-auth-user-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9/eyJfaWQiOiI2NDQ1YzUxN2RmNDFjYWFmNWY3NDgxMDkiLCJpYXQiOjE2ODIyOTQzMzd9.snV5MM-WmRsIbiKzOxPU4sFbdjWzGY1odc5hyqnk0Y4
     // Request body
     {
